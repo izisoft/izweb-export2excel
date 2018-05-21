@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require scotthuangzl/yii2-export2excel "dev-master"
+composer require --prefer-dist izisoft/yii2-export2excel "dev-master"
 ```
 
 or add
 
 ```
-"scotthuangzl/yii2-export2excel": "dev-master"
+"izisoft/yii2-export2excel": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -29,7 +29,7 @@ In any of your controller:
 
 
 ```php
-	use scotthuangzl\export2excel\Export2ExcelBehavior;
+	use izisoft\export2excel\Export2ExcelBehavior;
 	public function behaviors()
 		{
 		//above is your existing behaviors
@@ -53,7 +53,7 @@ In any of your controller:
             ],
 			//new add download action
             'download' => [
-                'class' => 'scotthuangzl\export2excel\DownloadAction',
+                'class' => 'izisoft\export2excel\DownloadAction',
             ],
         ];
     }
