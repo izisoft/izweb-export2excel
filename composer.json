@@ -1,6 +1,6 @@
 {
-	"name" : "izisoft/yii2-export2excel",
-	"description" : "A behavior to export yii2 query to excel and auto download",
+	"name" : "izisoft/izweb-export2excel",
+	"description" : "A behavior to export query to excel and auto download",
 	"type" : "yii2-extension",
 	"keywords" : [		
 		"izisoft",
@@ -22,7 +22,6 @@
 	},
 	"minimum-stability" : "dev",
 	"require" : {
-		"yiisoft/yii2" : "*",
 		"phpoffice/phpexcel" : "*"
 	},
 	"autoload" : {
