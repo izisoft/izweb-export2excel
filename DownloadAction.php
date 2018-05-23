@@ -6,9 +6,6 @@
  */
 
 namespace izi\export2excel;
-
-use Yii;
-use yii\base\Action;
 class DownloadAction extends Action
 {
     public function run($file_name, $file_type = 'excel', $deleteAfterDownload = false) {
