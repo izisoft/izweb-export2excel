@@ -6,9 +6,6 @@
  */
 namespace izi\export2excel;
 
-use yii\base\Behavior;
-use yii\helpers\Url;
-use Yii;
 use \PHPExcel;
 use \PHPExcel_IOFactory;
 use \PHPExcel_Settings;
@@ -216,7 +213,7 @@ class Export2ExcelBehavior extends Behavior
 
         }
         $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-        $tempDir_ = $tempDir = Yii::getAlias('@webroot') . '/uploads/';
+        $tempDir_ = $tempDir = __ROOT_PATH__ . '/uploads/';
         $tempDir = $tempDir_ . 'temp/';
         if (!is_dir($tempDir)) {
             if (!is_dir($tempDir_)) {
